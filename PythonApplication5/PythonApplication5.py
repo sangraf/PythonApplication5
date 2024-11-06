@@ -22,6 +22,7 @@ plt.show()
 
 data.corr()
 ax = sns.heatmap(data.corr(), annot=True)
+print(data.corr())
 plt.show()
 
 
