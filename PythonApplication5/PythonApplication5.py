@@ -14,6 +14,12 @@ data=initial_data[['age','hdlngth','skullw','totlngth','taill','footlgth','earco
 data=data.dropna()
 print(data.head(10))
 
+data.describe()
+g=sns.pairplot(data, plot_kws={"s": 10})
+g.fig.set_size_inches(6,6)
+plt.show()
+
+
 '''
 print(data)
 print(data.isnull().values.any())
