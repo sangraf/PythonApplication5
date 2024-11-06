@@ -17,6 +17,11 @@ print(data.head(10))
 data.describe()
 g=sns.pairplot(data, plot_kws={"s": 10})
 g.fig.set_size_inches(6,6)
+print(data.describe())
+plt.show()
+
+data.corr()
+ax = sns.heatmap(data.corr(), annot=True)
 plt.show()
 
 
